@@ -6,7 +6,7 @@ const closeModal = document.querySelector('.closeModal');
 function validateEmail(event) {
   console.log(modal);
   event.preventDefault();
-  if (inputField.value.match(/^[\w\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
+  if (inputField.value.match(/^[\w.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
     modal.classList.add('visible');
   } else {
     inputField.value = '';
